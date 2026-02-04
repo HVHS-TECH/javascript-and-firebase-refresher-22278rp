@@ -1,2 +1,2 @@
-var messageSpace = getElementbyId("HELLO WORLDDDDdddgyjdsfgddfjhfgkfggrfdddddddDDD");
+var messageSpace = getElementbyId("HELLO WORLDDDDdddgyjdsfgddfjhfgkfggrfdddkjhkjhddddDDD");
 messageSpace.innerHTML = "You've connected to the JavaScript!";
