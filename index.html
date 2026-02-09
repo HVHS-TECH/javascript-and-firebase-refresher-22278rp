@@ -3,18 +3,33 @@
 
 <head>
     <title>JavaScript and Firebase refresher</title>
+
+    <!-- firebase start ****************************************-->
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <!-- firebase end ******************************************-->
+
 </head>
 
 
 <body>
+    <p>Your tasks:
+    <h2 id="buttonPressed">JavaScript</h2>
+
     <script src="script.mjs"></script>
+
     <button onClick="start()">START</button>
+    <form onsubmit="return false;">
+        <label for="formName">Name:</label>
+        <input type ="text" id="nameField">
+        <input type = "submit" onClick= getFormInput()>
+    </form>
+    <h3 id = "javaScriptOutput">Form test</h3>
     <div id="spaceForJavaScriptOutput">
     <h1 id="messageSpace">You haven't connected the JavaScript yet!!?????!!!</h1>
 
-
-    <p>Your tasks:
-    <h2 id="buttonPressed">JavaScript</h2>
+    <button onclick="fb_initialise()">Initialise Firebase</button>
+    <button onclick="fb_authenticate()">Authenticate Firebase</button>
+   
     <ul>
         <li>Connect the JavaScript file - this page will tell you when it is done</li>
         <li>Add a button - Make it change the heading "You pressed the button!" </li>
