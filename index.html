@@ -8,6 +8,11 @@
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
     <!-- firebase end ******************************************-->
 
+    <!-- Your JS files & main module ***************************-->
+    <script type="module" src="./main.mjs"></script>
+    <script src="script.mjs"></script>
+
+
 </head>
 
 
@@ -15,13 +20,11 @@
     <p>Your tasks:
     <h2 id="buttonPressed">JavaScript</h2>
 
-    <script src="script.mjs"></script>
-
-    <button onClick="start()">START</button>
+    <button onclick="start()">START</button>
     <form onsubmit="return false;">
         <label for="formName">Name:</label>
         <input type ="text" id="nameField">
-        <input type = "submit" onClick= getFormInput()>
+        <input type = "submit" onclick= "getFormInput()">
     </form>
     <h3 id = "javaScriptOutput">Form test</h3>
     <div id="spaceForJavaScriptOutput">
