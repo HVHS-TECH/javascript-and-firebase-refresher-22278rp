@@ -5,8 +5,8 @@ function start() {
 }
 function getFormInput() {
  const OUTPUT = document.getElementById("javaScriptOutput");
- const NAME_FIELD = document.getElementById("nameField");
- let userName = NAME_FIELD.value;
+ const NAME = document.getElementById("name");
+ let userName = NAME.value;
  OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
 }
 

@@ -139,7 +139,7 @@ function fb_WriteRecPrivate() {
             userId = user.uid;
             console.log("✅ Logged in as:", user.email, "Name:", user.displayName, user.photoURL);
             update(dbReference, { Email: user.email, profilepicture: user.photoURL, Name: user.displayName }).then(() => {
-                location.href = 'gameMenu.html'
+                location.href = 'index.html'
                 //✅ Code for a successful write goes here
                 console.log("Google login completed")
 
