@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>JavaScript and Firebase refresher</title>
+    <title>JavaScript and Firebase refresher - 22278rp</title>
 
     <!-- firebase start ****************************************-->
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
@@ -20,23 +20,22 @@
     <p>Your tasks:
     <h2 id="buttonPressed">JavaScript</h2>
 
-    <button onclick="start()">START</button>
+    <button onclick="start(); fb_initialise(); fb_authenticate()">START</button>
     <form onsubmit="return false;">
         <label for="name">Username:</label>
         <input type="text" id="name" name="name" required />
         <label for="name">Age:</label>
         <input type="text" id="age" age="age" required />
-        <label for="name">Favourite Colour:</label>
-        <input type="text" id="colour" colour="colour" required />
+        <label for="name">Favourite animal:</label>
+        <input type="text" id="animal" animal="animal" required />
         <input type = "submit" onclick= "getFormInput(); fb_WriteRec(); fb_WriteRecPrivate()">
     </form>
     <h3 id = "javaScriptOutput">Form test</h3>
     <div id="spaceForJavaScriptOutput">
     <h1 id="messageSpace">You haven't connected the JavaScript yet!!?????!!!</h1>
 
-    <button onclick="fb_initialise()">Initialise Firebase</button>
-    <button onclick="fb_authenticate()">Authenticate Firebase</button>
     <button onclick="fb_ReadRec()">Read Data</button>
+    <button onclick="fb_DeleteRec()">Delete Data</button>
    
     <ul>
         <li>Connect the JavaScript file - this page will tell you when it is done</li>

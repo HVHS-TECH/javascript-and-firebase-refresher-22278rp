@@ -110,8 +110,8 @@ function fb_WriteRec() {
 function fb_WriteRecPrivate() {
     const AUTH = getAuth();
     var age = document.getElementById("age").value;
-    var colour = document.getElementById("colour").value;
-    if (!currentUser || age == "" || isNaN(age) || colour == "" || !isNaN(colour)) {
+    var animal = document.getElementById("animal").value;
+    if (!currentUser || age == "" || isNaN(age) || animal == "" || !isNaN(animal)) {
         alert("You must be logged in and enter a valid name and age.")
         return;
     }
@@ -121,7 +121,7 @@ function fb_WriteRecPrivate() {
 
     const dbReference = ref(DB, "Private/" + userId);
 
-    update(dbReference, { Age: age, Colour: colour }).then(() => {
+    update(dbReference, { Age: age, Animal: animal }).then(() => {
 
         //✅ Code for a successful write goes here
         console.log("successful write")
